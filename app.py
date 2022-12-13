@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from st_aggrid import AgGrid
+
 #import streamlit_pandas as sp
 #import numpy as np
 
@@ -14,11 +16,11 @@ st.markdown('In this Data Challenge Team 8 will be working with a SA Crime Datas
 st.markdown('The Members in Team 8 are: Giselle, Bruno, Luke, Georgette, Maryam1621 and Atousa')
 st.markdown('The Mentor for Team 8 is: Malgorzata')
 
-file_loaded = st.file_uploader('Upload your CSV files here')
+file_loaded = st.file_uploader('##Upload your CSV files here')
 
 if file_loaded:
     df = pd.read_csv(file_loaded)
-    
+    AgGrid(df)
     st.header('This is the dataset displays as a whole')
     st.dataframe(df)
 
