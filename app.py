@@ -28,5 +28,8 @@ if file_loaded:
     st.header('Shape of the dataset uploaded')
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
     st.dataframe(df.shape)
+
+    st.dataframe(df.head())
+    st.dataframe(df.tail())
     #####SSs
 
