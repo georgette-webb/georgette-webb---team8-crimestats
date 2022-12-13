@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
-from st_aggrid import AgGrid
-
-#import streamlit_pandas as sp
+from pandas_profiling import ProfileReport
 #import numpy as np
 
 st.set_page_config(
@@ -20,7 +18,7 @@ file_loaded = st.file_uploader('##Upload your CSV files here')
 
 if file_loaded:
     df = pd.read_csv(file_loaded)
-    AgGrid(df)
+
     st.header('This is the dataset displays as a whole')
     st.dataframe(df)
 
@@ -31,5 +29,7 @@ if file_loaded:
     st.header('Shape of the dataset uploaded')
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
     st.dataframe(df.shape)
+
+    profile = ProfileReport(df, title="Pandas Profiling Report")
     #####SS
 
