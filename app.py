@@ -22,7 +22,6 @@ if file_loaded:
     st.header('Description of the dataset uploaded')
     st.markdown('This table is a description of the dataset uploaded')
     st.write(df.describe())
-    #st.write(df.shape())
 
     st.header('Shape of the dataset uploaded')
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
@@ -30,5 +29,4 @@ if file_loaded:
     #####SS
 
     df = file_loaded()
-    st.write(df)
-    
+    st.dataframe(df)
