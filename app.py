@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+
 st.set_page_config(
     page_title='Team 8 - Crime Statistics',
     page_icon=':bar_chart:',
     layout="wide"
 )
 
-st.title('Team 8 - Crime Statistics')
+st.title('Team 8 - Crime Statistics APP')
 
 file_loaded = st.file_uploader('Upload you file here')
 
