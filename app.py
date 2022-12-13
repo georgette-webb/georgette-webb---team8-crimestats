@@ -23,10 +23,10 @@ if file_loaded:
 
     st.header('Description of the dataset uploaded')
     st.markdown('Description of the dataset uploaded')
-    st.write(df.describe.T())
+    st.write(df.describe())
 
     st.markdown('Description of the dataset uploaded Transposed')
-    st.write(df.describe())
+    st.write(df.T())
 
     st.header('Shape of the dataset uploaded')
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
