@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import streamlit_pandas as pd
+import streamlit_pandas as sp
 #import numpy as np
 
 st.set_page_config(
@@ -14,8 +14,7 @@ st.markdown('In this Data Challenge Team 8 will be working with a SA Crime Datas
 st.markdown('The Members in Team 8 are: Giselle, Bruno, Luke, Georgette, Maryam1621 and Atousa')
 st.markdown('The Mentor for Team 8 is: Malgorzata')
 
-
-file_loaded = st.file_uploader('Upload you file here')
+file_loaded = st.file_uploader('Upload your CSV files here')
 
 if file_loaded:
     df = pd.read_csv(file_loaded)
