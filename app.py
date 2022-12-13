@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 #import numpy as np
 
 st.set_page_config(
@@ -29,7 +28,5 @@ if file_loaded:
     st.header('Shape of the dataset uploaded')
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
     st.dataframe(df.shape)
-
-    df = px.data.gapminder()
     #####SSs
 
