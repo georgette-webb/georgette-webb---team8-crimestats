@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import streamlit_pandas as sp
+#import streamlit_pandas as sp
 #import numpy as np
 
 st.set_page_config(
