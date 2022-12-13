@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+#import numpy as np
 
 st.set_page_config(
     page_title='Team 8 - Crime Statistics',
@@ -28,3 +28,7 @@ if file_loaded:
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
     st.dataframe(df.shape)
     #####SS
+
+    df = file_loaded()
+    st.write(df)
+    
