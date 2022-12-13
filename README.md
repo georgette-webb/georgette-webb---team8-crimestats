@@ -6,4 +6,5 @@ Using this dataset, we aim to understand and explore the dataset in order to lat
 to gain insights and solve problems to reduce the crime rate.
 
 The Members in Team 8 are: Giselle, Bruno, Luke, Georgette, Maryam1621 and Atousa
+
 The Mentor for Team 8 is: Malgorzata
