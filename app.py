@@ -18,6 +18,9 @@ file_loaded = st.file_uploader('Upload you file here')
 
 if file_loaded:
     df = pd.read_csv(file_loaded)
+    
+    st.header('This is the dataset displays as a whole')
+    st.dataframe(df)
 
     st.header('Description of the dataset uploaded')
     st.markdown('This table is a description of the dataset uploaded')
@@ -28,5 +31,3 @@ if file_loaded:
     st.dataframe(df.shape)
     #####SS
 
-    #df = file_loaded()
-    st.dataframe(df)
