@@ -22,7 +22,10 @@ if file_loaded:
     st.dataframe(df)
 
     st.header('Description of the dataset uploaded')
-    st.markdown('This table is a description of the dataset uploaded')
+    st.markdown('Description of the dataset uploaded')
+    st.write(df.describe.T())
+
+    st.markdown('Description of the dataset uploaded Transposed')
     st.write(df.describe())
 
     st.header('Shape of the dataset uploaded')
@@ -31,7 +34,7 @@ if file_loaded:
 
     st.header('Data displaying the Head of the Dataset')
     st.dataframe(df.head())
-    
+
     st.header('Data displaying the tail of the Dataset')
     st.dataframe(df.tail())
     #####SSs
