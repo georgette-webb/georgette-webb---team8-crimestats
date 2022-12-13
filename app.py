@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from pandas_profiling import ProfileReport
+import plotly.express as px
 #import numpy as np
 
 st.set_page_config(
@@ -30,6 +30,6 @@ if file_loaded:
     st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
     st.dataframe(df.shape)
 
-    profile = ProfileReport(df, title="Pandas Profiling Report")
+    df = pd.DataFrame(px.data.gapminder())
     #####SS
 
