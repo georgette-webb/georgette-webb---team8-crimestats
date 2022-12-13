@@ -28,5 +28,5 @@ if file_loaded:
     st.dataframe(df.shape)
     #####SS
 
-    df = file_loaded()
+    #df = file_loaded()
     st.dataframe(df)
