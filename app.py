@@ -21,8 +21,7 @@ if file_loaded:
     st.session_state['df'] = df
 
     st.header('This is the dataset displays as a whole')
-    st.dataframe(df.style.apply(lambda x: "background-color: red"))
-    #st.dataframe(df)
+    st.dataframe(df)
 
     st.header('Description of the dataset uploaded')
     st.markdown('Description of the dataset uploaded')
