@@ -9,8 +9,5 @@ st.set_page_config(
 )
 st.title('Team 8 Slides')
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['a', 'b', 'c'])
-
-st.line_chart(chart_data)
+df = st.session_state['df']
+st.line_chart(df, x=None, y=None, width=0, height=0, use_container_width=True)
