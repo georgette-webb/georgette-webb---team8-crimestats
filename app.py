@@ -13,10 +13,11 @@ st.markdown('In this Data Challenge Team 8 will be working with a SA Crime Datas
 st.markdown('The Members in Team 8 are: Giselle, Bruno, Luke, Georgette, Maryam1621 and Atousa')
 st.markdown('The Mentor for Team 8 is: Malgorzata')
 
-file_loaded = st.file_uploader('##Upload your CSV files here')
+file_loaded = st.file_uploader('Upload your CSV files here')
 
-if file_loaded:
-    df = pd.read_csv(file_loaded)
+@st.cache
+def file_loaded(nrows):
+    df = pd.read_csv(file_loaded, nrows=nrows)
 
     st.header('This is the dataset displays as a whole')
     st.dataframe(df)
