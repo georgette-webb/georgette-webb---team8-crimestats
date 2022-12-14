@@ -31,14 +31,20 @@ if file_loaded:
     st.write(df.describe().T)
 
     st.header('Shape of the dataset uploaded')
-    st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
+    st.markdown('Shows the shape of the dataset uploaded. The number of Rows and Columns')
     st.dataframe(df.shape)
 
-    st.header('Data displaying the Head of the Dataset')
+    st.header('Data Types of the dataset uploaded')
+    st.markdown('Shows the Data type of the dataset uploaded. ')
+    st.dataframe(df.dtypes)
+
+    st.header('Data displaying the Head of the Dataset, 1st 5 rows')
     st.dataframe(df.head())
 
-    st.header('Data displaying the tail of the Dataset')
+    st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
+
+    st.dataframe(df.boxplot)
 
     
 
