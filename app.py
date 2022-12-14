@@ -1,5 +1,4 @@
 import streamlit as st
-from st_aggrid import AgGrid
 import pandas as pd
 import numpy as np
 
@@ -40,8 +39,6 @@ if file_loaded:
 
     st.header('Data displaying the tail of the Dataset')
     st.dataframe(df.tail(3))
-
-    AgGrid(df)
     #####SSs
 
 
