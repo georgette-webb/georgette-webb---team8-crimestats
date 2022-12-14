@@ -37,6 +37,11 @@ if file_loaded:
 
     st.header('Data displaying the tail of the Dataset')
     st.dataframe(df.tail(3))
+
+    st.bar_chart(np.histogram(df))
+
+
+
     #####SSs
 
 
