@@ -9,15 +9,12 @@ st.set_page_config(
     layout="wide"
 )
 def home():
-    st.empty()
     st.sidebar.markdown("# Home")
 
 def slides():
-    st.empty()
     st.markdown("# Project Slides")
 
 def page3():
-    st.empty()
     st.markdown("# Page 3")
     st.sidebar.markdown("# Page 3")
 
@@ -28,7 +25,7 @@ page_names_to_funcs = {
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
+page_names_to_funcs[selected_page](), st.empty()
 
 st.title('Team 8 Crime Statistics Data Challenge APP')
 st.markdown('In this Data Challenge Team 8 will be working with a SA Crime Dataset adapted from Crime Statistics 2021-22. Using this dataset. We aim to demonstrate our newly acquired data science skills and use them to inform how Local Government, or the South Australian Police (SAPOL) can improve the safety of their State. We aim to understand and explore the dataset in order to investigate the different types of crimes and their differing characteristics to gain insights and solve problems to reduce the crime rate.')
