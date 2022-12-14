@@ -46,5 +46,7 @@ if file_loaded:
 
     st.pyplot(fig)
 
+    st.map(df)
+
 
 
