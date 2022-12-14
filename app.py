@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+st.markdown("# Main page 🎈")
+st.sidebar.markdown("# Main page 🎈")
+
 st.set_page_config(
     page_title='Team 8 - Crime Statistics',
     page_icon=':bar_chart:',
