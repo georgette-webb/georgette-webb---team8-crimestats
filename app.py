@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 st.set_page_config(
     page_title='Team 8 - Crime Statistics',
@@ -38,4 +40,13 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset')
     st.dataframe(df.tail(3))
     #####SSs
+
+    plt.figure(figsize=(30,5)) #specifies the size of the figure
+    plt.title("Distribution of Crime across SA 2021 - 2022", fontsize=22) #give an axis title to the figure
+    plt.xlabel("Offence type", fontsize=18) #x-axis label
+    plt.ylabel("Number of incidents", fontsize=18) #y-axis label
+    df['Offence Level 3 Description'].hist(bins=30, rwidth=.92, grid=False)
+    plt.axhline(1.21689183183717, color='g', linestyle='--') #mean value
+    plt.xticks(rotation=90)
+    plt.show()
 
