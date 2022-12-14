@@ -11,7 +11,7 @@ st.set_page_config(
 def home():
     st.sidebar.markdown("# Home")
 
-def slides():
+def Project():
     st.markdown("# Project Slides")
 
 def page3():
@@ -20,7 +20,7 @@ def page3():
 
 page_names_to_funcs = {
     "Home": home,
-    "Project Slides": slides,
+    "Project Slides": Project,
     "Page 3": page3,
 }
 
