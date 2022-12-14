@@ -40,13 +40,9 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset')
     st.dataframe(df.tail(3))
 
-    arr = np.random.normal(1, 1, size=25)
-    fig, ax = plt.subplots()
-    ax.hist(arr, bins=20)
+    
 
-    st.pyplot(fig)
-
-    st.map(df)
+   
 
 
 
