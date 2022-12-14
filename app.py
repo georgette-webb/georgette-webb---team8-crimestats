@@ -18,7 +18,7 @@ file_loaded = st.file_uploader('Upload your CSV files here')
 if file_loaded:
     df = pd.read_csv(file_loaded)
     
-if st.checkbox('view data'):
+
     st.header('This is the dataset displays as a whole')
     st.dataframe(df)
 
