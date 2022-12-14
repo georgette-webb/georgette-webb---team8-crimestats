@@ -45,7 +45,7 @@ if file_loaded:
     st.dataframe(df.tail(3))
 
     df = pd.DataFrame(
-    columns=['b', 'd'])
+    columns=['Weekend vs Weekday', 'Suburb - Incident'])
 
     st.line_chart(df)
 
