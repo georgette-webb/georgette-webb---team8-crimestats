@@ -9,14 +9,15 @@ st.set_page_config(
     layout="wide"
 )
 def home():
-
+    st.empty()
     st.sidebar.markdown("# Home")
 
 def slides():
+    st.empty()
     st.markdown("# Project Slides")
-    st.sidebar.markdown("# Project Slides")
 
 def page3():
+    st.empty()
     st.markdown("# Page 3")
     st.sidebar.markdown("# Page 3")
 
