@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
 
 st.set_page_config(
     page_title='Team 8 - Slides',
@@ -7,10 +9,8 @@ st.set_page_config(
 )
 st.title('Team 8 Slides')
 
-df = st.session_state['df']
-st.header('Description of the dataset uploaded')
-st.markdown('Description of the dataset uploaded')
-st.write(df.describe())
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
 
-st.markdown('Description of the dataset uploaded Transposed')
-st.write(df.describe().T)
+st.line_chart(chart_data)
