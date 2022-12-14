@@ -1,4 +1,0 @@
-pandas=Dev
-numpy=Dev
-streamlit=Dev
-Pillow=Dev
