@@ -10,4 +10,3 @@ st.set_page_config(
 st.title('Team 8 Slides')
 
 df = st.session_state['df']
-st.line_chart(df, x=None, y=None, width=0, height=0, use_container_width=True)
