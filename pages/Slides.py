@@ -8,7 +8,7 @@ st.set_page_config(
 st.title('Team 8 Slides')
 
 from PIL import Image
-image = Image.open('Cover_Page.png')
+image = Image.open('cover.jpg')
 
 st.image(image, caption='Team 8 - Cover Page Slide')
 
