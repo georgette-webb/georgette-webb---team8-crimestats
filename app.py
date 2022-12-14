@@ -17,31 +17,27 @@ file_loaded = st.file_uploader('Upload your CSV files here')
 
 if file_loaded:
     df = pd.read_csv(file_loaded)
-
+    
+if st.checkbox('view data'):
     st.header('This is the dataset displays as a whole')
     st.dataframe(df)
 
-    st.header('Description of the dataset uploaded')
-    st.markdown('Description of the dataset uploaded')
-    st.write(df.describe())
+st.header('Description of the dataset uploaded')
+st.markdown('Description of the dataset uploaded')
+st.write(df.describe())
 
-    st.markdown('Description of the dataset uploaded Transposed')
-    st.write(df.describe().T)
+st.markdown('Description of the dataset uploaded Transposed')
+st.write(df.describe().T)
 
-    st.header('Shape of the dataset uploaded')
-    st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
-    st.dataframe(df.shape)
+st.header('Shape of the dataset uploaded')
+st.markdown('This table of the data uploaded shows the shape of the dataset uploaded. It shows the number of Rows and Columns')
+st.dataframe(df.shape)
 
-    st.header('Data displaying the Head of the Dataset')
-    st.dataframe(df.head())
+st.header('Data displaying the Head of the Dataset')
+st.dataframe(df.head())
 
-    st.header('Data displaying the tail of the Dataset')
-    st.dataframe(df.tail(3))
-
-    st.bar_chart(np.histogram(df))
-
-
-
+st.header('Data displaying the tail of the Dataset')
+st.dataframe(df.tail(3))
     #####SSs
 
 
