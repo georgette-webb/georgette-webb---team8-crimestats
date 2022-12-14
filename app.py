@@ -15,9 +15,8 @@ st.markdown('The Mentor for Team 8 is: Malgorzata')
 
 file_loaded = st.file_uploader('Upload your CSV files here')
 
-@st.cache
-def file_loaded(nrows):
-    df = pd.read_csv(file_loaded, nrows=nrows)
+if file_loaded:
+    df = pd.read_csv(file_loaded)
 
     st.header('This is the dataset displays as a whole')
     st.dataframe(df)
