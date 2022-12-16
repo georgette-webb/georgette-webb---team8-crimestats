@@ -48,7 +48,7 @@ if file_loaded:
     #df = pd.DataFrame(
     col=list(df.columns.values)
 
-    st.dataframe(df.col)
+    st.dataframe(df(col))
 
 
     #
