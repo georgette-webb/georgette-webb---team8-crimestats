@@ -18,6 +18,8 @@ file_loaded = st.file_uploader('Upload your CSV files here')
 
 if file_loaded:
     df = pd.read_csv(file_loaded)
+    df['Suburb - Incident'].value_counts().plot.bar()
+    
     st.session_state['df'] = df
 
     st.header('This is the dataset displays as a whole')
@@ -44,5 +46,5 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
 
-    df['Suburb - Incident'].value_counts().plot.bar()
+    
     
