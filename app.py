@@ -17,8 +17,7 @@ st.markdown('The Mentor for Team 8 is: Malgorzata')
 file_loaded = st.file_uploader('Upload your CSV files here')
 
 if file_loaded:
-    df = pd.read_csv(file_loaded)
-    df['Suburb - Incident'].value_counts().plot.bar()
+    df = pd.read_csv(file_loaded)    
     
     st.session_state['df'] = df
 
@@ -46,5 +45,5 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
 
-    
+    st.dataframe(df['Suburb - Incident'].value_counts().plot.bar())
     
