@@ -46,4 +46,5 @@ if file_loaded:
     st.dataframe(df.tail(3))
 
     st.dataframe(df['Offence count'].value_counts().plot.bar())
+    #
     
