@@ -45,5 +45,8 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
 
+    cols = list(df.columns.values)
+    print(cols)
+
     #
 
