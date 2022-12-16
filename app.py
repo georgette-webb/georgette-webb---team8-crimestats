@@ -48,7 +48,7 @@ if file_loaded:
     df = pd.DataFrame(
     columns=('Offence count'))
 
-    st.dataframe(df.style.highlight_max(axis=0))
+    st.dataframe(df.value_counts(axis=1))
 
 
     #
