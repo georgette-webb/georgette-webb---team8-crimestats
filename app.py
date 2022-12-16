@@ -24,32 +24,32 @@ if file_loaded:
     st.header('Dataset displayed as a whole')
     st.dataframe(df)
 
-    st.header('Description of the dataset uploaded')
-    st.markdown('Description of the dataset uploaded')
-    st.write(df.describe())
+    #st.header('Description of the dataset uploaded')
+    #st.markdown('Description of the dataset uploaded')
+    #st.write(df.describe())
 
-    st.markdown('Description of the dataset uploaded Transposed')
-    st.write(df.describe().T)
+    #st.markdown('Description of the dataset uploaded Transposed')
+    #st.write(df.describe().T)
 
-    st.header('Shape of the dataset uploaded')
-    st.markdown('Shows the shape of the dataset uploaded. The number of Rows and Columns')
-    st.dataframe(df.shape)
+    #st.header('Shape of the dataset uploaded')
+    #st.markdown('Shows the shape of the dataset uploaded. The number of Rows and Columns')
+    #st.dataframe(df.shape)
 
-    st.header('Data Types of the dataset uploaded')
-    st.markdown('Shows the Data type of the dataset uploaded. ')
-    st.dataframe(df.dtypes)
+    #st.header('Data Types of the dataset uploaded')
+    #st.markdown('Shows the Data type of the dataset uploaded. ')
+    #st.dataframe(df.dtypes)
 
-    st.header('Data displaying the Head of the Dataset, 1st 5 rows')
-    st.dataframe(df.head())
+    #st.header('Data displaying the Head of the Dataset, 1st 5 rows')
+    #st.dataframe(df.head())
 
     st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
 
-    dataframe = pd.DataFrame(
+    df = pd.DataFrame(
     np.random.randn(10, 20),
     columns=('col %d' % i for i in range(20)))
 
-    st.dataframe(dataframe.style.highlight_max(axis=0))
+    st.dataframe(df.style.highlight_max(axis=0))
 
 
     #
