@@ -48,7 +48,7 @@ if file_loaded:
     df = pd.DataFrame(
     columns=('Offence count'))
 
-    st.dataframe(df.value_counts(axis=1))
+    st.dataframe(df.value_counts(axis=0))
 
 
     #
