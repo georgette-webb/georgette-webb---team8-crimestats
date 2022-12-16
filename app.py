@@ -42,13 +42,13 @@ if file_loaded:
     #st.header('Data displaying the Head of the Dataset, 1st 5 rows')
     #st.dataframe(df.head())
 
-    st.header('Data displaying the tail of the Dataset, last 3 rows')
-    st.dataframe(df.tail(3))
+    #st.header('Data displaying the tail of the Dataset, last 3 rows')
+    #st.dataframe(df.tail(3))
 
     df = pd.DataFrame(
-    columns=('Offence count'))
+    col=list(df.columns.values))
 
-    st.dataframe(df.value_counts(axis=0))
+    st.dataframe(df.col)
 
 
     #
