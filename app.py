@@ -45,8 +45,12 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
 
-    cols = list(df.columns.values)
-    print(cols)
+    dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+
+    st.dataframe(dataframe.style.highlight_max(axis=0))
+
 
     #
 
