@@ -21,7 +21,7 @@ if file_loaded:
     
     st.session_state['df'] = df
 
-    st.header('This is the dataset displays as a whole')
+    st.header('Dataset displayed as a whole')
     st.dataframe(df)
 
     st.header('Description of the dataset uploaded')
@@ -45,5 +45,5 @@ if file_loaded:
     st.header('Data displaying the tail of the Dataset, last 3 rows')
     st.dataframe(df.tail(3))
 
-    st.dataframe(df['Suburb - Incident'].value_counts().plot.bar())
+    st.dataframe(df['Offence count'].value_counts().plot.bar())
     
