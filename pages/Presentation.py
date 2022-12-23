@@ -7,7 +7,7 @@ st.set_page_config(
 )
 st.title('Team 8 Video Presentation')
 
-video_file = open('pages\Team8datachallenge.mp4', 'rb')
+video_file = open('./pages/Team8datachallenge.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
