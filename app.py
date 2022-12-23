@@ -10,8 +10,8 @@ st.set_page_config(
 )
 
 st.title('Team 8 Crime Statistics Data Challenge APP')
-st.markdown('In this Data Challenge Team 8 will be working with a SA Crime Dataset adapted from Crime Statistics 2021-22. Using this dataset. We aim to demonstrate our newly acquired data science skills and use them to inform how Local Government, or the South Australian Police (SAPOL) can improve the safety of their State. We aim to understand and explore the dataset in order to investigate the different types of crimes and their differing characteristics to gain insights and solve problems to reduce the crime rate.')
-st.markdown('The Members in Team 8 are: Giselle, Bruno, Luke, Georgette, Maryam1621 and Atousa')
+st.markdown('Welcome to our presentation for Team 8. This team consists of Giselle, Bruno, Georgette, Maryam, Atousa and myself. My name is Luke , and for this Data Challenge, Team 8 will be working with SAPOL Crime Statistics Dataset from 2019-2022.')
+st.markdown('The Members in Team 8 are: Giselle, Bruno, Luke, Georgette, Maryam and Atousa')
 st.markdown('The Mentor for Team 8 is: Malgorzata')
 
 file_loaded = st.file_uploader('Upload your CSV files here')
